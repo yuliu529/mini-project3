@@ -7,7 +7,7 @@ def audio_vis(audio_path):
     x, sr = lr.load(audio_path) # sr <- sample rate
     librosa.load(audio_path, sr=44100) # set sample rate
     ipd.Audio(audio_path)
-    X = librosa.stft(x) # STFT
+    X = librosa.stft(x) # Short Time Fourier Transform
     Xdb = librosa.amplitude_to_db(abs(X))
     plt.figure(figsize=(14,5))
     librosa.display.specshow(Xdb, sr=sr, x_axis='time', y_axis='hz')
