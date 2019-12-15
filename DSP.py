@@ -20,6 +20,6 @@ def audio_vis(audio_path):
     plt.show()
 
 if __name__ == "__main__":
-    audio_path = '/Users/liuyu/Desktop/weather.wav'
+    audio_path = './weather.wav'
     audio_vis(audio_path)
 
